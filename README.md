@@ -82,5 +82,5 @@ docker run -d \
     --restart always \
     --name localtunnel \
     --net host \
-    defunctzombie/localtunnel-server:latest --port 3000
+    chalut/localtunnel:1.0.0 --port 3000
 ```
