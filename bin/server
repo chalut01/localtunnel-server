@@ -11,7 +11,7 @@ import CreateServer from '../server';
 const debug = Debug('localtunnel');
 
 const argv = optimist
-    .usage('Usage: $0 [--port num] [--address address] [--domain domain] [--max-sockets 10] [--client-min-port-range 3000 --client-max-port-range 3500]')
+    .usage('Usage: $0 [--port num] [--address address] [--domain domain] [--max-sockets 10] [--client-min-port-range 3000] [--client-max-port-range 3500]')
     .options('secure', {
         default: false,
         describe: 'use this flag to indicate proxy over https'
