@@ -44,19 +44,19 @@ You will be assigned a URL similar to `heavy-puma-9.sub.example.com:1234`.
 If your server is acting as a reverse proxy (i.e. nginx) and is able to listen on port 80, then you do not need the `:1234` part of the hostname for the `lt` client.
 
 ### Options
---secure : use this flag to indicate proxy over https
+`--secure` : use this flag to indicate proxy over https
 
---port num : listen on this port for outside requests
+`--port num` : listen on this port for outside requests
 
---address address : IP address to bind to
+`--address address` : IP address to bind to
 
---domain domain : Specify the base domain name. This is optional if hosting localtunnel from a regular example.com domain. This is required if hosting a localtunnel server from a subdomain (i.e. lt.example.dom where clients will be client-app.lt.example.come
+`--domain domain` : Specify the base domain name. This is optional if hosting localtunnel from a regular example.com domain. This is required if hosting a localtunnel server from a subdomain (i.e. lt.example.dom where clients will be client-app.lt.example.come
 
---max-sockets num : (default 10) maximum number of tcp sockets each client is allowed to establish at one time (the tunnels)
+`--max-sockets num` : (default 10) maximum number of tcp sockets each client is allowed to establish at one time (the tunnels)
 
---client-min-port-range num : (default 1025) Port start range to use for localtunnel clients to connect to 
+`--client-min-port-range num` : (default 1025) Port start range to use for localtunnel clients to connect to 
 
---client-max-port-range num : (default 65535) Port end range to use for localtunnel clients to connect to
+`--client-max-port-range num` : (default 65535) Port end range to use for localtunnel clients to connect to
 
 
 ## REST API
