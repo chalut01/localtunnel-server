@@ -45,12 +45,19 @@ If your server is acting as a reverse proxy (i.e. nginx) and is able to listen o
 
 ### Options
 --secure : use this flag to indicate proxy over https
+
 --port num : listen on this port for outside requests
+
 --address address : IP address to bind to
+
 --domain domain : Specify the base domain name. This is optional if hosting localtunnel from a regular example.com domain. This is required if hosting a localtunnel server from a subdomain (i.e. lt.example.dom where clients will be client-app.lt.example.come
+
 --max-sockets num : (default 10) maximum number of tcp sockets each client is allowed to establish at one time (the tunnels)
+
 --client-min-port-range num : (default 1025) Port start range to use for localtunnel clients to connect to 
+
 --client-max-port-range num : (default 65535) Port end range to use for localtunnel clients to connect to
+
 
 ## REST API
 
