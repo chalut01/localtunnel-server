@@ -84,3 +84,14 @@ docker run -d \
     --net host \
     chalut/localtunnel:1.0.0 --port 3000
 ```
+or
+```
+docker run -d  --restart always --name localtunnel  \
+  -p 0.0.0.0:80:80/tcp \
+  -p 0.0.0.0:3000:3000/tcp\
+  -p 0.0.0.0:3001:3001/tcp\
+  -p 0.0.0.0:3002:3002/tcp\
+  -p 0.0.0.0:3003:3003/tcp\
+  -p 0.0.0.0:3004:3004/tcp\
+  chalut/localtunnel:1.0.0 --port 80 --client-min-port-range 3000 --client-max-port-range 3004
+```
